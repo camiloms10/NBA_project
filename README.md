@@ -192,11 +192,11 @@ To do ALL of the following analysis first I did the import via pd.read_csv comma
 
 
 * During the 2012 season the top 5 players with most attempts were:
-  * Stephen Curry - GSW
-  * Klay Thompson - GSW
-  * Ryan Anderson - NOH
-  * Paul George - IND
-  * Danny Green - SAS
+  * Stephen Curry - GSW (716.0)
+  * Klay Thompson - GSW (622.0)
+  * Ryan Anderson - NOH (608.0)
+  * Paul George - IND (598.0)
+  * Danny Green - SAS (560.0)
 
 
 ### 6. Top 10 players with most 3pt FG Attempts since 2012 till 2019
@@ -209,16 +209,18 @@ To do ALL of the following analysis first I did the import via pd.read_csv comma
 </p>
 
 * The top 10 players were:
-  * James Harden
-  * Stephen Curry 
-  * Damian Lillard
-  * Klay Thompson 
-  * Paul George
-  * Kyle Lowry
-  * Kemba Walker
-  * JJ Redick
-  * Trevor Ariza
-  * Eric Gordon 
+  * James Harden (6649.0)
+  * Stephen Curry (6345.0)
+  * Damian Lillard (5460.0)
+  * Klay Thompson (5170.0)
+  * Paul George (4502.0)
+  * Kyle Lowry (4389.0)
+  * Kemba Walker (4196.0)
+  * JJ Redick (3992.0)
+  * Trevor Ariza (3883.0)
+  * Eric Gordon (3840.0)
+
+In these two graphs above we compare the top 10 by FG3A per season and per game.
 
 See the [open issues](https://github.com/camiloms10/NBA_project/issues) for a full list of proposed features (and known issues).
 
