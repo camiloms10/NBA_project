@@ -157,7 +157,7 @@ To do ALL of the following analysis first I did the import via pd.read_csv comma
 ### 2. Correlation by season  between 3pt% (only Center position) and final team win %
 
 <p align ="center">
-<img src="images/FG3M_corr.jpg" width="400" height="198" align="middle">
+<img src="images/FG3M_corr.jpg" width="1400" height="200" align="middle">
 </p>
 
 * 2019 has a positive correlation between 3pt% and final win %, the rest of the seasons show no correlation at all.
