@@ -144,19 +144,81 @@ You can use this data to analyze:
 <!-- ROADMAP -->
 ## Roadmap
 
-To do ALL of the following analysis first I did the import via pd.read_csv commands and joined them as I needed to, you can check that inside the .ipynb file.
+To do ALL of the following analysis first I did the import via pd.read_csv commands and joined them as I needed to, you can check that inside the [.ipynb file](NBA_analysis.ipynb) with the step by step solution.
 
 ### 1. Center position game style change through the years
 
 <p align ="center">
-<img src="images/Center_3_pt.jpg" alt="Logo" width="200" height="100" align="middle">
+<img src="images/Center_3_pt.jpg" width="400" height="198" align="middle">
 </p>
 
-After 2012 Centers started to take more 3 pointer shots
+* After 2012 Centers started to take more 3 pointer shots
 
-### 1. Center position game style change through the years
+### 2. Correlation by season  between 3pt% (only Center position) and final team win %
 
-### 1. Center position game style change through the years
+<p align ="center">
+<img src="images/FG3M_corr.jpg" width="400" height="198" align="middle">
+</p>
+
+* 2019 has a positive correlation between 3pt% and final win %, the rest of the seasons show no correlation at all.
+* That means we can´t assume that if we have high 3pt% from the centers in a team will impact win% positively.
+
+### 3. 3pt metrics vs 2 pt metrics by season (analyzing trends)
+
+<p align ="center">
+<img src="images/FG3M_SEASON.jpg" width="400" height="198" align="middle">
+</p>
+<p align ="center">
+<img src="images/FG3A_SEASON.jpg" width="400" height="198" align="middle">
+</p>
+<p align ="center">
+<img src="images/FG3_PERC_SEASON.jpg" width="400" height="198" align="middle">
+</p>
+
+* 3 pointers attempted have increased almost year by year since the 2012 season (56K to 83K), meanwhile 2 pointers are decreasing slowly since then (175K to 135K). This can also be seen by the per game metrics: 3pt attempts per game (43 to 68) and 2pt attempts per game (122 to 108).
+* 2 pointer shots percentage made has increased from 2013 till 2019 (48% to 52%), meanwhile 3 pointers remain at the 36% range
+
+### 4. 3 point and 2 point FG metrics % of change by NBA Season 
+<p align ="center">
+<img src="images/FG_PERC_CHANGE_SEASON.jpg" width="400" height="200" align="middle">
+</p>
+
+* Both 3 pt and 2 pt attempts increased massively from 2011 to 2012 seasons (40% and 26% respectively). That´s because the 2011 season had 300 less games due to the NBA lockout by players, since then the 3 pt attempts mantained a positive % change till the 2018 season, meanwhile the 2 pt attempts decreased each year in the same timeframe.
+
+### 5. Main drivers (PLAYERS) of 3 pointer attempts increase from 2012 season
+<p align ="center">
+<img src="images/PLAYERS_PARETO.png" width="400" height="200" align="middle">
+</p>
+
+
+* During the 2012 season the top 5 players with most attempts were:
+  * Stephen Curry - GSW
+  * Klay Thompson - GSW
+  * Ryan Anderson - NOH
+  * Paul George - IND
+  * Danny Green - SAS
+
+
+### 6. Top 10 players with most 3pt FG Attempts since 2012 till 2019
+
+<p align ="center">
+<img src="images/TOP_PLAYERS_3PT_PER_SEASON.jpg" width="400" height="200" align="middle">
+</p>
+<p align ="center">
+<img src="images/TOP_PLAYERS_3PT_PER_GAME.jpg" width="400" height="200" align="middle">
+</p>
+
+* The top 10 players were:
+  * James Harden
+  * Stephen Curry 
+  * Damian Lillard
+  * Klay Thompson 
+  * Paul George
+  * Kyle Lowry
+  * Kemba Walker
+  * JJ Redick
+  * Trevor Ariza
+  * Eric Gordon 
 
 See the [open issues](https://github.com/camiloms10/NBA_project/issues) for a full list of proposed features (and known issues).
 
