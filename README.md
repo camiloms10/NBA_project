@@ -62,15 +62,15 @@
       <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#data-sources">Data Sources</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
+    <!--<li><a href="#contributing">Contributing</a></li>-->
+    <!--<li><a href="#license">License</a></li>-->
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <!--<li><a href="#acknowledgments">Acknowledgments</a></li>-->
   </ol>
 </details>
 
@@ -81,7 +81,7 @@
 
 <img src="images/3_pointer_about.png" alt="Logo" width="200" height="100">
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email`, `email_client`, `project_title`, `project_description`
+Through this project you´ll find multiple analysis about how the NBA´s way of playing the game evolved from a 2 pointer attempting game to a longer range (3 pointer) style of play, this will be shown by correlation coefficients, line charts and pareto charts (main drivers of change).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -98,12 +98,10 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
 
-### Prerequisites (Python libraries)
+### Prerequisites
 
-These are the libraries you´ll need to run the ipynb file.
+These are the python libraries you´ll need to run the ipynb file.
 * Libraries
   ```sh
   pip install numpy
@@ -115,15 +113,30 @@ These are the libraries you´ll need to run the ipynb file.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+### Data Sources
+
+The data source of this project where downloaded from [Kaggle](https://www.kaggle.com/nathanlauga/nba-games)
+* These are the csv files used inside the project
+
+  * **games.csv :** all games from 2004 season to last update with the date, teams and some details like number of points, etc.
+  * **games_details.csv :** details of games dataset, all statistics of players for a given game
+  * **players.csv :** players details (name)
+  * **ranking.csv :** ranking of NBA given a day (split into west and east on CONFERENCE column
+  * **teams.csv :** all teams of NBA
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+
 
 
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+You can use this data to analyze:
+* How a player has performed through time
+* The correlation between individual NBA metrics and general team results (wins)
+* Predict a game result based on the team´s individuals
+* Etc.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -131,18 +144,27 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
+To do ALL of the following analysis first I did the import via pd.read_csv commands and joined them as I needed to, you can check that inside the .ipynb file.
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
+### 1. Center position game style change through the years
+
+<p align ="center">
+<img src="images/Center_3_pt.jpg" alt="Logo" width="200" height="100" align="middle">
+</p>
+
+After 2012 Centers started to take more 3 pointer shots
+
+### 1. Center position game style change through the years
+
+### 1. Center position game style change through the years
+
+See the [open issues](https://github.com/camiloms10/NBA_project/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
-<!-- CONTRIBUTING -->
+<!-- CONTRIBUTING 
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -157,16 +179,16 @@ Don't forget to give the project a star! Thanks again!
 5. Open a Pull Request
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+-->
 
 
-
-<!-- LICENSE -->
+<!-- LICENSE 
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
+-->
 
 
 <!-- CONTACT -->
@@ -180,7 +202,7 @@ Project Link: [https://github.com/camiloms10/NBA_project](https://github.com/cam
 
 
 
-<!-- ACKNOWLEDGMENTS -->
+<!-- ACKNOWLEDGMENTS 
 ## Acknowledgments
 
 * []()
@@ -188,7 +210,7 @@ Project Link: [https://github.com/camiloms10/NBA_project](https://github.com/cam
 * []()
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
+-->
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
